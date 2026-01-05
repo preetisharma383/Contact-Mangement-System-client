@@ -1,0 +1,39 @@
+.dashboard{
+    display: flex;
+    height: 90vh;
+}
+
+.sidebar-container{
+    width: 20%;
+    border-right: 2px solid gray;
+}
+.content-container{
+    width: 80%;
+}
+/* contact */
+.contact-list{
+    padding: 20px 60px 0 60px;
+    text-align: center;
+}
+.table-icon1,.table-icon2{
+    margin: 0px 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.table-icon1{
+    color: green;
+}
+.table-icon2{
+    color: red;
+}
+.not-found{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgb(20,20,20);
+    color: yellow;
+    align-items: center;
+    justify-content: center;
+}
+
+

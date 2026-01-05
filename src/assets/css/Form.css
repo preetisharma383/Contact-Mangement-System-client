@@ -1,0 +1,134 @@
+/* RESET & BASE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* COMMON CONTAINER STYLES */
+.form-container,
+.add-form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('../bgimage.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ADD FORM CONTAINER OVERRIDE */
+.add-form-container {
+    padding: 20px;
+    width: 80vw;
+}
+
+/* COMMON FORM STYLES */
+.form,
+.add-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 25px;
+}
+
+/* FORM SIZES */
+.form {
+    padding: 20px;
+    width: 400px;
+}
+
+.add-form {
+    width: 100%;
+    max-width: 550px;
+}
+
+/* HEADINGS */
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* FORM GROUPS */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* ADD FORM LAYOUT */
+.add-form .form-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* LABELS */
+.form label,
+.add-form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-form label {
+    min-width: 120px;
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #2b2a2a;
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
+    border-bottom-color: rgb(5,121,121);
+}
+
+/* PLACEHOLDER */
+input::placeholder {
+    color: #2b2a2a;
+}
+
+/* BUTTON */
+.form-button {
+    background-color: rgb(5,121,121);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-button:hover {
+    background-color: rgb(4,100,100);
+}
+
+/* ERROR */
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* RESPONSIVE FIX */
+@media (max-width: 600px) {
+    .add-form .form-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .add-form label {
+        min-width: unset;
+    }
+}
+p{
+    margin-top: 10px;
+}
