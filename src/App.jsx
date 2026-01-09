@@ -62,6 +62,10 @@ const router=createBrowserRouter([
 
 const App = () => {
   const [user,setUser]=useState();
+  const token = localStorage.getItem("token");
+  if (!token) {
+  return; // 🚫 DO NOT CALL VERIFY
+}
   useEffect(()=>{
     axios.get(
   'https://contact-mangement-system-gveo.vercel.app/ContactSystem/verify',
