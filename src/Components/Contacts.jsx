@@ -100,7 +100,7 @@ const Contacts = () => {
     setLoading(true);
     try {
       const res = await axios.get(
-        'http://localhost:3000/ContactSystem/contacts',
+        'https://contact-mangement-system-gveo.vercel.app/ContactSystem/contacts',
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
