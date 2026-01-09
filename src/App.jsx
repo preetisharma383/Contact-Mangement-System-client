@@ -63,11 +63,14 @@ const router=createBrowserRouter([
 const App = () => {
   const [user,setUser]=useState();
   useEffect(()=>{
-    axios.get('https://contact-mangement-system-gveo.vercel.app/ContactSystem/verify',{
-      headers:{
-        Authorization:`Bearer ${localStorage.getItem('token')}`
-      }
-    })
+    axios.get(
+  'https://contact-mangement-system-gveo.vercel.app/ContactSystem/verify',
+  {
+    headers: {
+      Authorization: `Bearer ${localStorage.getItem("token")}`
+    }
+  }
+)
     .then(res=>{
       if(res.data.user){
         setUser(res.data.user)
